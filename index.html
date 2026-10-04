@@ -51,9 +51,7 @@
           <p class="release-kicker">最新候选版本 · 2026 年 10 月 4 日</p>
           <h1 id="hero-title">StarFlow <span>STUDIO</span></h1>
           <p class="version-number">1.4.6<span>-rc</span></p>
-          <p class="hero-description">
-            让商标与防盗水印处理更顺手。<br />从素材扫描到逐张微调，每一步都更清晰。
-          </p>
+          <p class="hero-description">每一段流程的终点<br />都通往星流</p>
           <div class="hero-actions">
             <a
               class="button button-primary"
@@ -64,10 +62,7 @@
               >查看全部更新 <span aria-hidden="true">↓</span></a
             >
           </div>
-          <p class="hero-meta">
-            Windows x64 <span>·</span> RC 候选版
-            <span>·</span> 已完成安装包完整性检查
-          </p>
+          <p class="hero-meta">Windows x64 <span>·</span> RC 候选版</p>
         </div>
         <div class="hero-scroll" aria-hidden="true">
           向下了解更新 <span>↓</span>
@@ -254,7 +249,9 @@
                 <ul class="release-sublist">
                   <li>“调整防盗水印”“调整商标”两个入口直接对应手头任务；</li>
                   <li>撤回就在预览区顶部；</li>
-                  <li>右侧栏中，点击当前 Logo 卡片即可切换版本，少走一次下拉菜单。</li>
+                  <li>
+                    右侧栏中，点击当前 Logo 卡片即可切换版本，少走一次下拉菜单。
+                  </li>
                 </ul>
               </li>
               <li>
@@ -278,20 +275,18 @@
               <li>
                 左侧集中查看素材与最近文件，中间专心预览，右侧调整商标和防盗水印。侧栏可手动收起，窄窗口下也能按需展开。
               </li>
-              <li>
-                产品路径、运行状态和撤回操作融入现有区域，减少上下滚动。
-              </li>
+              <li>产品路径、运行状态和撤回操作融入现有区域，减少上下滚动。</li>
               <li>移除多余元素，工作流程更专注。</li>
               <li>素材刷新改为紧凑的圆形按钮，视觉更美观。</li>
               <li>
                 BUG修复：“减淡”“加深”“通过”及数字键 1、2、3
                 只在调整防盗水印时生效。查看成品或调整商标时，不会误触发旧的逐张处理动作。
               </li>
-              <li>
-                “星门”暂时不可进入，内部等待装修后重新开放。
-              </li>
+              <li>“星门”暂时不可进入，内部等待装修后重新开放。</li>
               <li>主页设置新增自动保存机制，无须再找“保存设置”。</li>
-              <li>优化缓存机制，不再留下乱七八糟的废弃版本文件和中间文件，使你的工作区和资产库都保持整洁有序。</li>
+              <li>
+                优化缓存机制，不再留下乱七八糟的废弃版本文件和中间文件，使你的工作区和资产库都保持整洁有序。
+              </li>
             </ul>
           </article>
 
@@ -334,7 +329,9 @@
                 调整商标时，已加上的防盗水印会保留。两者按同一张图片的保存设置重新合成，避免反复编辑时层层叠加。
               </li>
               <li>单次操作可以撤回；写入意外中断时也增加了恢复处理。</li>
-              <li>增加星门进入多产品处理界面；其入口已在 1.3.0-rc 暂时关闭。</li>
+              <li>
+                增加星门进入多产品处理界面；其入口已在 1.3.0-rc 暂时关闭。
+              </li>
             </ul>
           </article>
 
@@ -354,7 +351,9 @@
                 逐张调整时，快捷键 1、2、3 与“减淡”“加深”“通过”按钮保持一致。
               </li>
               <li>
-                修复启动时偶发停在“等待 WebView Bridge”的问题；“重试连接”会在当前页面重新探测，并增加 Windows 单实例保护。
+                修复启动时偶发停在“等待 WebView
+                Bridge”的问题；“重试连接”会在当前页面重新探测，并增加 Windows
+                单实例保护。
               </li>
               <li>固定已验证的 WebView 依赖版本，完善启动日志和运行时诊断。</li>
               <li>
@@ -396,15 +395,19 @@
                 使用前请备份重要图片与工作数据；软件更新不会自动备份你的文件。
               </li>
               <li>
-                建议一个产品使用一个独立文件夹，原图集中放在 <code>image</code> 或 <code>image_*</code> 中，例如：
-                <pre class="folder-example">产品素材/
+                建议一个产品使用一个独立文件夹，原图集中放在
+                <code>image</code> 或 <code>image_*</code> 中，例如：
+                <pre class="folder-example">
+产品素材/
 └─ 产品 A/
    └─ output/
       ├─ image/         原图
       ├─ image_ml/      其他原图（可选）
       ├─ image_logo/    生成的成品图
-      └─ image_ml_logo/ 其他成品图</pre>
-                <code>_logo</code> 文件夹由软件在原图文件夹旁生成，无须预先建立。也可以直接选择只有图片的目录开始处理；此结构仅供整理素材时参考。
+      └─ image_ml_logo/ 其他成品图</pre
+                >
+                <code>_logo</code>
+                文件夹由软件在原图文件夹旁生成，无须预先建立。也可以直接选择只有图片的目录开始处理；此结构仅供整理素材时参考。
               </li>
               <li>
                 需要核对下载文件时，可使用安装包 SHA-256：<code
