@@ -13,8 +13,8 @@
 @media(max-width:760px){.version-rail{position:sticky;top:0;z-index:5;margin:0 -22px 34px;padding:10px 22px 12px;background:#080b0ef2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.version-rail .rail-current::before{display:none}.release{scroll-margin-top:76px}}
 
 /* The hero halo fades into the page; two soft rings travel outward like water. */
-.hero-glow{width:min(920px,116vw);height:min(920px,116vw);border:0;box-shadow:none;background:radial-gradient(circle,transparent 30%,#3b926f0a 49%,#63bd851b 66%,#3c8f6b0d 81%,transparent 100%)}
-.hero-glow::before,.hero-glow::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,transparent 48%,#a4f4bc05 57%,#a4f4bc22 68%,#a4f4bc0c 77%,transparent 89%);filter:blur(12px);opacity:0;transform:scale(.76);animation:hero-water-ripple 10s linear infinite;will-change:transform,opacity}
+.hero-glow{width:min(920px,116vw);height:min(920px,116vw);border:0;border-radius:0;box-shadow:none;background:radial-gradient(circle closest-side,transparent 30%,#3b926f0a 49%,#63bd851b 66%,#3c8f6b0d 81%,transparent 100%)}
+.hero-glow::before,.hero-glow::after{content:"";position:absolute;inset:0;border-radius:0;background:radial-gradient(circle closest-side,transparent 48%,#a4f4bc05 57%,#a4f4bc22 68%,#a4f4bc0c 77%,transparent 89%);filter:blur(12px);opacity:0;transform:scale(.76);animation:hero-water-ripple 10s linear infinite;will-change:transform,opacity}
 .hero-glow::after{animation-delay:-5s}
 @keyframes hero-water-ripple{0%{transform:scale(.76);opacity:0}18%{opacity:.55}65%{opacity:.34}100%{transform:scale(1.4);opacity:0}}
 @media(max-width:760px){.hero-glow{width:min(700px,130vw);height:min(700px,130vw)}}
