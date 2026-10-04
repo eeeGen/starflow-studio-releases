@@ -1,151 +1,434 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080b0e">
-  <meta name="description" content="StarFlow STUDIO 发布说明：查看 1.0.6-rc 至 1.4.6-rc 的所有更新，并从 GitHub Release 下载最新版。">
-  <title>StarFlow STUDIO · 更新日志与下载</title>
-  <link rel="icon" href="release-assets/Q_night.png">
-  <link rel="stylesheet" href="release.css">
-</head>
-<body>
-  <a class="skip-link" href="#updates">跳到更新内容</a>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="StarFlow STUDIO 返回顶部">
-      <img src="release-assets/Q_night.png" alt="" width="40" height="40">
-      <span><strong>StarFlow</strong><small>STUDIO</small></span>
-    </a>
-    <nav aria-label="页面导航">
-      <a href="#updates">更新日志</a>
-      <a class="header-download" href="https://github.com/eeeGen/starflow-studio-releases/releases/tag/v1.4.6-rc">下载最新版 <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#080b0e" />
+    <meta
+      name="description"
+      content="StarFlow STUDIO 发布说明：查看 1.0.6-rc 至 1.4.6-rc 的所有更新，并从 GitHub Release 下载最新版。"
+    />
+    <title>StarFlow STUDIO · 更新日志与下载</title>
+    <link rel="icon" href="release-assets/Q_night.png" />
+    <link rel="stylesheet" href="release.css" />
+    <script src="release.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#updates">跳到更新内容</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="StarFlow STUDIO 返回顶部">
+        <img src="release-assets/Q_night.png" alt="" width="40" height="40" />
+        <span><strong>StarFlow</strong><small>STUDIO</small></span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#updates">更新日志</a>
+        <a
+          class="header-download"
+          href="https://github.com/eeeGen/starflow-studio-releases/releases/tag/v1.4.6-rc"
+          >下载最新版 <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <p class="eyebrow"><span class="eyebrow-line"></span> STARFLOW STUDIO · RELEASE NOTES</p>
-        <div class="hero-mark"><img src="release-assets/Q_night.png" alt="" width="72" height="72"></div>
-        <p class="release-kicker">最新候选版本 · 2026 年 10 月 4 日</p>
-        <h1 id="hero-title">StarFlow <span>STUDIO</span></h1>
-        <p class="version-number">1.4.6<span>-rc</span></p>
-        <p class="hero-description">让商标与防盗水印处理更顺手。<br>从素材扫描到逐张微调，每一步都更清晰。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/eeeGen/starflow-studio-releases/releases/download/v1.4.6-rc/StarFlowStudio-1.4.6-rc-x64-Setup.exe">下载 Windows 安装包 <span aria-hidden="true">↓</span></a>
-          <a class="button button-outline" href="#updates">查看全部更新 <span aria-hidden="true">↓</span></a>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span> STARFLOW STUDIO · RELEASE NOTES
+          </p>
+          <div class="hero-mark">
+            <img
+              src="release-assets/Q_night.png"
+              alt=""
+              width="72"
+              height="72"
+            />
+          </div>
+          <p class="release-kicker">最新候选版本 · 2026 年 10 月 4 日</p>
+          <h1 id="hero-title">StarFlow <span>STUDIO</span></h1>
+          <p class="version-number">1.4.6<span>-rc</span></p>
+          <p class="hero-description">
+            让商标与防盗水印处理更顺手。<br />从素材扫描到逐张微调，每一步都更清晰。
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/eeeGen/starflow-studio-releases/releases/download/v1.4.6-rc/StarFlowStudio-1.4.6-rc-x64-Setup.exe"
+              >下载 Windows 安装包 <span aria-hidden="true">↓</span></a
+            >
+            <a class="button button-outline" href="#updates"
+              >查看全部更新 <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <p class="hero-meta">
+            Windows x64 <span>·</span> RC 候选版
+            <span>·</span> 已完成安装包完整性检查
+          </p>
         </div>
-        <p class="hero-meta">Windows x64 <span>·</span> RC 候选版 <span>·</span> 已完成安装包完整性检查</p>
+        <div class="hero-scroll" aria-hidden="true">
+          向下了解更新 <span>↓</span>
+        </div>
+      </section>
+
+      <div class="page-shell" id="updates">
+        <aside class="version-rail" aria-label="版本目录">
+          <p class="rail-label">版本目录</p>
+          <a class="rail-current" href="#v146" aria-current="location"
+            >1.4.6-rc <small>最新</small></a
+          >
+          <a href="#v145">1.4.5-rc</a>
+          <a href="#v144">1.4.4-rc</a>
+          <a href="#v143">1.4.3-rc</a>
+          <a href="#v142">1.4.2-rc</a>
+          <a href="#v141">1.4.1-rc</a>
+          <a href="#v140">1.4.0-rc</a>
+          <a href="#v130">1.3.0-rc</a>
+          <a href="#v120">1.2.0-rc</a>
+          <a href="#v110">1.1.0-rc</a>
+          <a href="#v106">1.0.6-rc</a>
+        </aside>
+
+        <div class="release-content">
+          <section class="intro" aria-labelledby="intro-title">
+            <p class="section-overline">WHAT'S NEW</p>
+            <h2 id="intro-title">
+              每一次更新，<br /><span>都更贴近你的工作流。</span>
+            </h2>
+            <p>
+              以下从最新到最早，记录 1.0.6-rc
+              及之后的版本更新。历次改进已汇入当前的 1.4.6-rc 安装包。
+            </p>
+          </section>
+
+          <article
+            class="release release-latest"
+            id="v146"
+            aria-labelledby="title-146"
+          >
+            <div class="release-heading">
+              <div>
+                <p class="release-date">
+                  2026.10.04 <span class="latest-badge">最新版本</span>
+                </p>
+                <h2 id="title-146">1.4.6-rc</h2>
+              </div>
+              <span class="release-index">01 / 11</span>
+            </div>
+            <div class="feature-highlight">
+              <span class="feature-icon">↗</span>
+              <div>
+                <h3>常用入口，始终顺手</h3>
+                <p>修复按钮消失问题。</p>
+                <p>
+                  路径再长，所有按钮也会留在你看得见、点得到的位置。完整路径仍可查看，长路径不再挤走常用操作。
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="release" id="v145" aria-labelledby="title-145">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.04</p>
+                <h2 id="title-145">1.4.5-rc</h2>
+              </div>
+              <span class="release-index">02 / 11</span>
+            </div>
+            <h3>小窗口，也能专注当前图片</h3>
+            <ul>
+              <li>新增双面抽屉式机制。</li>
+              <li>
+                缩小窗口时，素材与最近文件栏会先收起，商标和防盗水印工具继续留在手边，预览区域优先获得空间。
+              </li>
+              <li>
+                窗口更窄时，两侧工具栏可按需展开。打开其中一侧，另一侧会自动收起，避免遮住正在查看的图片。
+              </li>
+            </ul>
+          </article>
+
+          <article class="release" id="v144" aria-labelledby="title-144">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.04</p>
+                <h2 id="title-144">1.4.4-rc</h2>
+              </div>
+              <span class="release-index">03 / 11</span>
+            </div>
+            <h3>任意图片目录，开盒即用</h3>
+            <ul>
+              <li>
+                素材列表和最近文件优先显示产品名称，减少一排排
+                <code>image</code>、<code>image_*</code>
+                带来的辨认成本。
+              </li>
+              <li>增加叶子目录扫描功能，无须退回父级路径扫描。</li>
+            </ul>
+          </article>
+
+          <article class="release" id="v143" aria-labelledby="title-143">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.02</p>
+                <h2 id="title-143">1.4.3-rc</h2>
+              </div>
+              <span class="release-index">04 / 11</span>
+            </div>
+            <h3>外部修改的图片，去留由你掌控</h3>
+            <ul>
+              <li>
+                如果输出图被其他软件改过，再次生成前会列出受影响的图片。你可以取消操作、保留这些图片并继续处理其他图片，或明确选择覆盖重做。
+              </li>
+              <li>
+                选择覆盖后仍可使用“撤回”找回原图。真正写入前，自动复核机制还会再核对一次文件；如果你确认后文件又变了，不会沿用过期的决定直接覆盖。
+              </li>
+            </ul>
+          </article>
+
+          <article class="release" id="v142" aria-labelledby="title-142">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.02</p>
+                <h2 id="title-142">1.4.2-rc</h2>
+              </div>
+              <span class="release-index">05 / 11</span>
+            </div>
+            <h3>对于删掉的成品图，我们提供了后悔药</h3>
+            <ul>
+              <li>
+                手动删除不满意的成品图后，可以沿用已经选好的商标、防盗水印和调整记录重新生成，无须从头配置整个产品。
+              </li>
+              <li>
+                对仍然存在、但内容已被其他软件改动的图片，软件会继续保护；刷新素材也不会悄悄覆盖它们。
+              </li>
+              <li>
+                撤回一次重新生成后，图片会回到生成前“文件不存在”的状态，避免留下你本来已经删除的成品。
+              </li>
+            </ul>
+          </article>
+
+          <article class="release" id="v141" aria-labelledby="title-141">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.02</p>
+                <h2 id="title-141">1.4.1-rc</h2>
+              </div>
+              <span class="release-index">06 / 11</span>
+            </div>
+            <h3>操作不断档，细节更统一</h3>
+            <ul>
+              <li>
+                在“调整防盗水印”和“调整商标”之间切换时，保持当前图片，不用每次从第一张重新找起。
+              </li>
+              <li>导出诊断包后，文件所在位置会自动打开。</li>
+              <li>夜间模式下的滚动条也会随界面变为深色。</li>
+              <li>
+                工作区移除了重复的进度文字，让当前图片和真正需要的操作更醒目。
+              </li>
+            </ul>
+          </article>
+
+          <article class="release" id="v140" aria-labelledby="title-140">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.02</p>
+                <h2 id="title-140">1.4.0-rc</h2>
+              </div>
+              <span class="release-index">07 / 11</span>
+            </div>
+            <h3>让主工作台回到图片本身</h3>
+            <ul>
+              <li>
+                素材与最近文件区域按固定比例排布，各自独立滚动，查找素材时不会把另一组内容一起带走。
+              </li>
+              <li>最近文件沿用素材列表样式，统一视觉。</li>
+              <li>最近文件在正常关闭软件时清空，下次打开从干净的列表开始。</li>
+              <li>
+                当前产品路径继续可见，重复的标题和模式提示被收起，为图片预览腾出空间。
+              </li>
+              <li>
+                缩短交互路径：
+                <ul class="release-sublist">
+                  <li>“调整防盗水印”“调整商标”两个入口直接对应手头任务；</li>
+                  <li>撤回就在预览区顶部；</li>
+                  <li>右侧栏中，点击当前 Logo 卡片即可切换版本，少走一次下拉菜单。</li>
+                </ul>
+              </li>
+              <li>
+                逐张调整防盗水印时，可以用滑块预览当前图片的深浅；商标位置调整完成后也能正常保存。
+              </li>
+              <li>修复打包版调整商标后因位置数据类型不符而保存失败的问题。</li>
+            </ul>
+          </article>
+
+          <article class="release" id="v130" aria-labelledby="title-130">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.10.02</p>
+                <h2 id="title-130">1.3.0-rc</h2>
+              </div>
+              <span class="release-index">08 / 11</span>
+            </div>
+            <h3>围绕单产品，重做主工作流</h3>
+            <ul>
+              <li>优化交互设计。</li>
+              <li>
+                左侧集中查看素材与最近文件，中间专心预览，右侧调整商标和防盗水印。侧栏可手动收起，窄窗口下也能按需展开。
+              </li>
+              <li>
+                产品路径、运行状态和撤回操作融入现有区域，减少上下滚动。
+              </li>
+              <li>移除多余元素，工作流程更专注。</li>
+              <li>素材刷新改为紧凑的圆形按钮，视觉更美观。</li>
+              <li>
+                BUG修复：“减淡”“加深”“通过”及数字键 1、2、3
+                只在调整防盗水印时生效。查看成品或调整商标时，不会误触发旧的逐张处理动作。
+              </li>
+              <li>
+                “星门”暂时不可进入，内部等待装修后重新开放。
+              </li>
+              <li>主页设置新增自动保存机制，无须再找“保存设置”。</li>
+              <li>优化缓存机制，不再留下乱七八糟的废弃版本文件和中间文件，使你的工作区和资产库都保持整洁有序。</li>
+            </ul>
+          </article>
+
+          <article class="release" id="v120" aria-labelledby="title-120">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.09.30</p>
+                <h2 id="title-120">1.2.0-rc</h2>
+              </div>
+              <span class="release-index">09 / 11</span>
+            </div>
+            <h3>遇到问题，有迹可循</h3>
+            <ul>
+              <li>
+                增加本地结构化事件记录，涵盖关键操作、界面异常与后台处理；报错时显示诊断编号。
+              </li>
+              <li>
+                需要协助排查时，你可以手动导出诊断包。记录不会自动上传，也不包含图片内容、完整路径、文件名或许可证数据等隐私信息；本机记录按时间和容量自动限额保存。
+              </li>
+            </ul>
+          </article>
+
+          <article class="release" id="v110" aria-labelledby="title-110">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.09.29</p>
+                <h2 id="title-110">1.1.0-rc</h2>
+              </div>
+              <span class="release-index">10 / 11</span>
+            </div>
+            <h3>商标从批量处理，走向逐张精修</h3>
+            <ul>
+              <li>
+                批量生成后，可以单独拖动某张图片上的商标，或通过角点与滑块调整大小；满意后再保存这张图片，其他图片不用跟着重做。
+              </li>
+              <li>
+                选择商标版本时可以直接看透明背景缩略图和大图。每张图片的调整位置会被记住，再次打开仍能接着改。
+              </li>
+              <li>
+                调整商标时，已加上的防盗水印会保留。两者按同一张图片的保存设置重新合成，避免反复编辑时层层叠加。
+              </li>
+              <li>单次操作可以撤回；写入意外中断时也增加了恢复处理。</li>
+              <li>增加星门进入多产品处理界面；其入口已在 1.3.0-rc 暂时关闭。</li>
+            </ul>
+          </article>
+
+          <article class="release" id="v106" aria-labelledby="title-106">
+            <div class="release-heading">
+              <div>
+                <p class="release-date">2026.08.14 起</p>
+                <h2 id="title-106">
+                  1.0.6-rc <span class="and-earlier">及早期基础</span>
+                </h2>
+              </div>
+              <span class="release-index">11 / 11</span>
+            </div>
+            <h3>稳定工作的基础</h3>
+            <ul>
+              <li>
+                逐张调整时，快捷键 1、2、3 与“减淡”“加深”“通过”按钮保持一致。
+              </li>
+              <li>
+                修复启动时偶发停在“等待 WebView Bridge”的问题；“重试连接”会在当前页面重新探测，并增加 Windows 单实例保护。
+              </li>
+              <li>固定已验证的 WebView 依赖版本，完善启动日志和运行时诊断。</li>
+              <li>
+                产品正式取名 StarFlow
+                STUDIO，并建立离线许可证验证机制；无需每次处理图片都连接网络验证授权。
+              </li>
+              <li>
+                许可证和发布清单使用数字签名与指纹校验，完善完整性检查与发布包复验流程。
+              </li>
+            </ul>
+          </article>
+
+          <section class="download-panel" aria-labelledby="download-title">
+            <p class="section-overline">READY TO UPDATE?</p>
+            <h2 id="download-title">获取当前版本</h2>
+            <p>
+              前述各版本的功能改动已汇入 1.4.6-rc。请从 GitHub Release
+              获取安装包。
+            </p>
+            <a
+              class="button button-primary"
+              href="https://github.com/eeeGen/starflow-studio-releases/releases/download/v1.4.6-rc/StarFlowStudio-1.4.6-rc-x64-Setup.exe"
+              >下载 1.4.6-rc 安装包 <span aria-hidden="true">↓</span></a
+            >
+            <a
+              class="release-link"
+              href="https://github.com/eeeGen/starflow-studio-releases/releases/tag/v1.4.6-rc"
+              >在 GitHub 查看 Release <span aria-hidden="true">↗</span></a
+            >
+          </section>
+
+          <section class="fine-print" aria-labelledby="notes-title">
+            <h2 id="notes-title">安装前请留意</h2>
+            <ul>
+              <li>
+                当前为 Windows x64 RC 候选版，真实设备安装和功能验收尚未完成。
+              </li>
+              <li>
+                使用前请备份重要图片与工作数据；软件更新不会自动备份你的文件。
+              </li>
+              <li>
+                建议一个产品使用一个独立文件夹，原图集中放在 <code>image</code> 或 <code>image_*</code> 中，例如：
+                <pre class="folder-example">产品素材/
+└─ 产品 A/
+   └─ output/
+      ├─ image/         原图
+      ├─ image_ml/      其他原图（可选）
+      ├─ image_logo/    生成的成品图
+      └─ image_ml_logo/ 其他成品图</pre>
+                <code>_logo</code> 文件夹由软件在原图文件夹旁生成，无须预先建立。也可以直接选择只有图片的目录开始处理；此结构仅供整理素材时参考。
+              </li>
+              <li>
+                需要核对下载文件时，可使用安装包 SHA-256：<code
+                  >87CA7A33594ECD4468503E5A363CF29349BE0A838A62F0C443490141251CBE67</code
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
-      <div class="hero-scroll" aria-hidden="true">向下了解更新 <span>↓</span></div>
-    </section>
+    </main>
 
-    <div class="page-shell" id="updates">
-      <aside class="version-rail" aria-label="版本目录">
-        <p class="rail-label">版本目录</p>
-        <a class="rail-current" href="#v146"><span class="rail-dot"></span> 1.4.6-rc <small>最新</small></a>
-        <a href="#v145">1.4.5-rc</a>
-        <a href="#v144">1.4.4-rc</a>
-        <a href="#v143">1.4.3-rc</a>
-        <a href="#v142">1.4.2-rc</a>
-        <a href="#v141">1.4.1-rc</a>
-        <a href="#v140">1.4.0-rc</a>
-        <a href="#v130">1.3.0-rc</a>
-        <a href="#v120">1.2.0-rc</a>
-        <a href="#v110">1.1.0-rc</a>
-        <a href="#v106">1.0.6-rc</a>
-      </aside>
-
-      <div class="release-content">
-        <section class="intro" aria-labelledby="intro-title">
-          <p class="section-overline">WHAT'S NEW</p>
-          <h2 id="intro-title">每一次更新，<br><span>都更贴近你的工作流。</span></h2>
-          <p>以下从最新到最早，记录 1.0.6-rc 及之后的版本更新。历次改进已汇入当前的 1.4.6-rc 安装包。</p>
-        </section>
-
-        <article class="release release-latest" id="v146" aria-labelledby="title-146">
-          <div class="release-heading"><div><p class="release-date">2026.10.04 <span class="latest-badge">最新版本</span></p><h2 id="title-146">1.4.6-rc</h2></div><span class="release-index">01 / 11</span></div>
-          <div class="feature-highlight"><span class="feature-icon">↗</span><div><h3>常用入口，始终顺手</h3><p>即使素材路径很长，“打开文件夹”按钮也会留在你看得见、点得到的位置。完整路径仍可查看，长路径不再挤走常用操作。</p></div></div>
-        </article>
-
-        <article class="release" id="v145" aria-labelledby="title-145">
-          <div class="release-heading"><div><p class="release-date">2026.10.04</p><h2 id="title-145">1.4.5-rc</h2></div><span class="release-index">02 / 11</span></div>
-          <h3>小窗口，也能专注当前图片</h3>
-          <ul><li>缩小窗口时，素材与最近文件栏会先收起，商标和防盗水印工具继续留在手边，预览区域优先获得空间。</li><li>窗口更窄时，两侧工具栏可按需展开。打开其中一侧，另一侧会自动收起，避免遮住正在查看的图片。</li></ul>
-        </article>
-
-        <article class="release" id="v144" aria-labelledby="title-144">
-          <div class="release-heading"><div><p class="release-date">2026.10.04</p><h2 id="title-144">1.4.4-rc</h2></div><span class="release-index">03 / 11</span></div>
-          <h3>打开图片目录，就能开始处理</h3>
-          <ul><li>素材列表和最近文件优先显示产品名称，减少一排排 <code>image</code>、<code>image_*</code> 带来的辨认成本；实际路径仍保留，方便核对来源。</li><li>现在可以直接选择只有图片的详情图文件夹，无须退回上一级再扫描。软件会读取其中的图片，并把生成结果放在原图文件夹旁对应的输出文件夹中。</li></ul>
-        </article>
-
-        <article class="release" id="v143" aria-labelledby="title-143">
-          <div class="release-heading"><div><p class="release-date">2026.10.02</p><h2 id="title-143">1.4.3-rc</h2></div><span class="release-index">04 / 11</span></div>
-          <h3>外部修改的图片，由你决定怎么处理</h3>
-          <ul><li>如果输出图被其他软件改过，再次生成前会列出受影响的图片。你可以取消操作、保留这些图片并继续处理其他图片，或明确选择覆盖重做。</li><li>选择覆盖后仍可使用“撤回”找回原图。真正写入前，软件还会再核对一次文件；如果你确认后文件又变了，不会沿用过期的决定直接覆盖。</li></ul>
-        </article>
-
-        <article class="release" id="v142" aria-labelledby="title-142">
-          <div class="release-heading"><div><p class="release-date">2026.10.02</p><h2 id="title-142">1.4.2-rc</h2></div><span class="release-index">05 / 11</span></div>
-          <h3>删掉的成品图，可以按原设置找回来</h3>
-          <ul><li>手动删除不满意的成品图后，可以沿用已经选好的商标、防盗水印和调整记录重新生成，无须从头配置整个产品。</li><li>对仍然存在、但内容已被其他软件改动的图片，软件会继续保护；刷新素材也不会悄悄覆盖它们。</li><li>撤回一次重新生成后，图片会回到生成前“文件不存在”的状态，避免留下你本来已经删除的成品。</li></ul>
-        </article>
-
-        <article class="release" id="v141" aria-labelledby="title-141">
-          <div class="release-heading"><div><p class="release-date">2026.10.02</p><h2 id="title-141">1.4.1-rc</h2></div><span class="release-index">06 / 11</span></div>
-          <h3>操作不断档，细节更统一</h3>
-          <ul><li>在“调整防盗水印”和“调整商标”之间切换时，保持当前图片，不用每次从第一张重新找起。</li><li>导出诊断包后，文件所在位置会自动打开；夜间模式下的滚动条也会随界面变为深色。</li><li>工作区移除了重复的进度文字，让当前图片和真正需要的操作更醒目。</li></ul>
-        </article>
-
-        <article class="release" id="v140" aria-labelledby="title-140">
-          <div class="release-heading"><div><p class="release-date">2026.10.02</p><h2 id="title-140">1.4.0-rc</h2></div><span class="release-index">07 / 11</span></div>
-          <h3>让主工作台回到图片本身</h3>
-          <ul><li>素材和最近文件各有自己的滚动区域，查找素材时不会把另一组内容一起带走。最近文件在正常关闭软件时清空，下次打开从干净的列表开始。</li><li>当前产品路径继续可见，但不再独占一个大框；重复的标题和模式提示被收起，为图片预览腾出空间。</li><li>“调整防盗水印”“调整商标”两个入口直接对应手头任务；撤回就在预览区顶部。点击当前 Logo 卡片即可切换版本，少走一次下拉菜单。</li><li>逐张调整防盗水印时，可以用滑块预览当前图片的深浅；商标位置调整完成后也能正常保存。</li></ul>
-        </article>
-
-        <article class="release" id="v130" aria-labelledby="title-130">
-          <div class="release-heading"><div><p class="release-date">2026.10.02</p><h2 id="title-130">1.3.0-rc</h2></div><span class="release-index">08 / 11</span></div>
-          <h3>单产品工作流，重新排布</h3>
-          <ul><li>左侧集中查看素材与最近文件，中间专心预览，右侧调整商标和防盗水印。侧栏可手动收起，窄窗口下也能按需展开。</li><li>产品路径、运行状态和撤回操作融入现有区域，减少上下滚动；素材刷新改为紧凑的圆形按钮。</li><li>“减淡”“加深”“通过”及数字键 1、2、3 只在调整防盗水印时生效。查看成品或调整商标时，不会误触发旧的逐张处理动作。</li><li>“星门”暂时不可进入，等待交互重做；主页设置会自动保存，无须再找“保存设置”。</li></ul>
-        </article>
-
-        <article class="release" id="v120" aria-labelledby="title-120">
-          <div class="release-heading"><div><p class="release-date">2026.09.30</p><h2 id="title-120">1.2.0-rc</h2></div><span class="release-index">09 / 11</span></div>
-          <h3>遇到问题，能准确找到线索</h3>
-          <ul><li>关键操作和异常会在本机留下有结构的记录；遇到报错时，界面会给出诊断编号，便于对应具体问题。</li><li>需要协助排查时，你可以手动导出诊断包。记录不会自动上传，也不包含图片内容、完整路径、文件名或许可证数据；本机记录按时间和容量自动限额保存。</li></ul>
-        </article>
-
-        <article class="release" id="v110" aria-labelledby="title-110">
-          <div class="release-heading"><div><p class="release-date">2026.09.29</p><h2 id="title-110">1.1.0-rc</h2></div><span class="release-index">10 / 11</span></div>
-          <h3>商标从批量处理，走向逐张精修</h3>
-          <ul><li>批量生成后，可以单独拖动某张图片上的商标，或通过角点与滑块调整大小；满意后再保存这张图片，其他图片不用跟着重做。</li><li>选择商标版本时可以直接看透明背景缩略图和大图。每张图片的调整位置会被记住，再次打开仍能接着改。</li><li>调整商标时，已加上的防盗水印会保留。两者按同一张图片的保存设置重新合成，避免反复编辑时层层叠加。</li><li>单次操作可以撤回；写入意外中断时也增加了恢复处理。</li></ul>
-        </article>
-
-        <article class="release" id="v106" aria-labelledby="title-106">
-          <div class="release-heading"><div><p class="release-date">2026.08.14 起</p><h2 id="title-106">1.0.6-rc <span class="and-earlier">及早期基础</span></h2></div><span class="release-index">11 / 11</span></div>
-          <h3>稳定工作的基础</h3>
-          <ul><li>逐张调整时，数字键 1、2、3 与“减淡”“加深”“通过”按钮保持一致。</li><li>改善启动后偶尔停在连接等待界面的情况；“重试连接”可以在当前页面继续尝试。Windows 上重复打开软件时，也会避免出现多个互相干扰的窗口。</li><li>产品更名为 StarFlow STUDIO，并建立离线许可证验证机制；无需每次处理图片都连接网络验证授权。</li><li>许可证和发布清单使用数字签名与指纹校验，安装包也保留完整性校验记录，让版本来源与文件是否发生变化更容易确认。</li></ul>
-        </article>
-
-        <section class="download-panel" aria-labelledby="download-title">
-          <p class="section-overline">READY TO UPDATE?</p>
-          <h2 id="download-title">获取当前版本</h2>
-          <p>前述各版本的功能改动已汇入 1.4.6-rc。请从 GitHub Release 获取安装包。</p>
-          <a class="button button-primary" href="https://github.com/eeeGen/starflow-studio-releases/releases/download/v1.4.6-rc/StarFlowStudio-1.4.6-rc-x64-Setup.exe">下载 1.4.6-rc 安装包 <span aria-hidden="true">↓</span></a>
-          <a class="release-link" href="https://github.com/eeeGen/starflow-studio-releases/releases/tag/v1.4.6-rc">在 GitHub 查看 Release <span aria-hidden="true">↗</span></a>
-        </section>
-
-        <section class="fine-print" aria-labelledby="notes-title">
-          <h2 id="notes-title">安装前请留意</h2>
-          <ul><li>当前为 Windows x64 RC 候选版，真实设备安装和功能验收尚未完成。</li><li>使用前请备份重要图片与工作数据；软件更新不会自动备份你的文件。</li><li>需要核对下载文件时，可使用安装包 SHA-256：<code>87CA7A33594ECD4468503E5A363CF29349BE0A838A62F0C443490141251CBE67</code></li></ul>
-        </section>
-      </div>
+    <footer class="site-footer">
+      <span>StarFlow STUDIO</span
+      ><span
+        >Copyright © 2026 星流国际贸易（汕头市）有限责任公司 · Created by
+        eGen.</span
+      ><a href="#top">回到顶部 ↑</a>
+    </footer>
+    <div class="mobile-download">
+      <a
+        href="https://github.com/eeeGen/starflow-studio-releases/releases/download/v1.4.6-rc/StarFlowStudio-1.4.6-rc-x64-Setup.exe"
+        >下载最新版本 <span aria-hidden="true">↓</span></a
+      >
     </div>
-  </main>
-
-  <footer class="site-footer"><span>StarFlow STUDIO</span><span>Copyright © 2026 星流国际贸易（汕头市）有限责任公司 · Created by eGen.</span><a href="#top">回到顶部 ↑</a></footer>
-  <div class="mobile-download"><a href="https://github.com/eeeGen/starflow-studio-releases/releases/download/v1.4.6-rc/StarFlowStudio-1.4.6-rc-x64-Setup.exe">下载最新版本 <span aria-hidden="true">↓</span></a></div>
-</body>
+  </body>
 </html>
