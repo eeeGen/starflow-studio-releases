@@ -11,3 +11,11 @@
 .release .release-sublist{padding:8px 0 0 12px;margin:0}.release .release-sublist li{padding-bottom:6px}.release .release-sublist li::before{width:4px;height:4px;background:#78a68a}
 .fine-print .folder-example{max-width:100%;overflow-x:auto;margin:9px 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:#a9c8b4;font:12px/1.6 "Cascadia Code",Consolas,monospace}
 @media(max-width:760px){.version-rail{position:sticky;top:0;z-index:5;margin:0 -22px 34px;padding:10px 22px 12px;background:#080b0ef2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.version-rail .rail-current::before{display:none}.release{scroll-margin-top:76px}}
+
+/* The hero halo fades into the page; two soft rings travel outward like water. */
+.hero-glow{width:min(920px,116vw);height:min(920px,116vw);border:0;box-shadow:none;background:radial-gradient(circle,transparent 30%,#3b926f0a 49%,#63bd851b 66%,#3c8f6b0d 81%,transparent 100%)}
+.hero-glow::before,.hero-glow::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,transparent 56%,#a4f4bc08 62%,#a4f4bc33 68%,#a4f4bc17 72%,transparent 80%);opacity:0;transform:scale(.76);animation:hero-water-ripple 10s linear infinite;will-change:transform,opacity}
+.hero-glow::after{animation-delay:-5s}
+@keyframes hero-water-ripple{0%{transform:scale(.76);opacity:0}18%{opacity:.55}65%{opacity:.34}100%{transform:scale(1.4);opacity:0}}
+@media(max-width:760px){.hero-glow{width:min(700px,130vw);height:min(700px,130vw)}}
+@media(prefers-reduced-motion:reduce){.hero-glow::before,.hero-glow::after{animation:none;opacity:0}}
